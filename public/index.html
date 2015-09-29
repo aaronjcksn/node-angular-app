@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="postApp">
+  <head>
+    <title>myApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container" ng-controller="postController">
+      <h1>Add those numbers!</h1>
+
+
+        <form name="addForm" ng-submit="submitForm()">
+          <div class="form-group">
+            <label>Add your first number here: </label>
+            <input ng-model="number.firstNumber" type="number" name="numberOne" id="numberOne" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label>Add your second number here: </label>
+            <input ng-model="number.secondNumber" type="number" name="numberTwo" id="numberTwo" class="form-control" />
+          </div>
+          <button style="submit" class="btn btn-default">Submit</button>
+        </form>
+        
+        <h2>Sum: {{total}}</h2>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

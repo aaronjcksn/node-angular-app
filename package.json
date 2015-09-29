@@ -1,0 +1,11 @@
+{
+  "name"  : "my-app",
+  "version" : "0.0.0",
+  "description" : "Simple app that adds numbers within it's text fields.",
+  "main"  : "app.js",
+  "author"  : "Aaron",
+  "dependencies" : {
+    "express" : "~4.7.2",
+    "body-parser" : "~1.5.2"
+  }
+}
